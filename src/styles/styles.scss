@@ -1,0 +1,29 @@
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~bootstrap-vue/src/index.scss";
+
+body {
+  background: $gray-100;
+
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+
+    .items {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
+      grid-gap: 3px;
+
+      .item {
+        display: block;
+        //width: 200px;
+        //height: 200px;
+        background: red;
+
+        &::before {
+          padding-bottom: 100%;
+        }
+      }
+    }
+  }
+
+}
